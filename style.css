@@ -1,0 +1,81 @@
+
+       /*EL CSS SE COMENTA ASI*/
+       /*LA ETIQUETA STYLE NOS PERMITE DARLE ESTILO A LAS CLASES*/
+       /*Si le cambiamos el color al texto de prueba, que color le pondrias?*/
+       /*cambiemosle el tamño de letra*/
+
+       /*digame como quiere que sea ese texto, yo te voy diciendo el nombre de estas propiedades
+       sip, si es que quiere de un color o de cierto tipo de fuente no se... lo que se le ocurra*/
+
+        /*
+        En html existen los colores basicos... pero cuando quieres hacer referencia a otros colores...
+        deben usar HEXADECIMAL
+        https://htmlcolorcodes.com/es/selector-de-color/
+        esa pagina te ayuda a visualizar que color te gustaria...
+        */
+        /*se comentan las clases iniciales para que aprendiera la chuchu
+
+       .prueba{
+           color: white;
+           ;
+           font-size: 100px;
+           background: #33FFD5;;
+ 
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+
+       .texto{
+           color: white;
+           font-size: 20px;    
+       }
+
+       .chuchu{
+            color: #33FFD5;
+            font-size: 70px;            
+            background: black;
+       }
+       .chu{
+           color: white;
+           font-size:90px;
+       }
+       */
+       /*cuando quieres modificar cosas sobre objetos como el BODY se escribe sin punto*/
+       body{
+        /*hacemos referencia al archivo*/
+        background:url('./fondo.jpg');
+        /*yo lo escribi... le digo al fondo que cubra todo el tamaño*/
+        /*aqui obligamos a la imagen a CUBRIR todo el espacio adaptando su tamaño*/
+        background-size: cover;
+        /*le digo que siempre el fondo tiene que cubrir TODO */
+        min-height: 100%;
+   }
+    /*esta clase tendra la transparencia que va por encima de la foto*/
+    .overlay{
+        background-color: rgba(12, 28, 36, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        background: white;
+    }
+    .azul{
+        background-color: #33C3FF;            
+    }
+    .cele{
+        background-color: #2EB2C1;
+    }
+    .claro{
+        background-color:#3BC3AD;
+    }
+    .verde{
+        background-color:#6AC4A8;
+    }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
