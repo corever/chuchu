@@ -4,41 +4,6 @@
        /*Si le cambiamos el color al texto de prueba, que color le pondrias?*/
        /*cambiemosle el tamño de letra*/
 
-       /*digame como quiere que sea ese texto, yo te voy diciendo el nombre de estas propiedades
-       sip, si es que quiere de un color o de cierto tipo de fuente no se... lo que se le ocurra*/
-
-        /*
-        En html existen los colores basicos... pero cuando quieres hacer referencia a otros colores...
-        deben usar HEXADECIMAL
-        https://htmlcolorcodes.com/es/selector-de-color/
-        esa pagina te ayuda a visualizar que color te gustaria...
-        */
-        /*se comentan las clases iniciales para que aprendiera la chuchu
-
-       .prueba{
-           color: white;
-           ;
-           font-size: 100px;
-           background: #33FFD5;;
- 
-           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       }
-
-       .texto{
-           color: white;
-           font-size: 20px;    
-       }
-
-       .chuchu{
-            color: #33FFD5;
-            font-size: 70px;            
-            background: black;
-       }
-       .chu{
-           color: white;
-           font-size:90px;
-       }
-       */
        /*cuando quieres modificar cosas sobre objetos como el BODY se escribe sin punto*/
        body{
         /*hacemos referencia al archivo*/
@@ -79,119 +44,122 @@
         padding-right: 0px;
 
     }
-    ul {list-style-type: none;}
-body {font-family: Verdana, Arial, Helvetica, sans-serif;}
+    ul {
+      list-style-type: none;
+    }
+    body {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
 
-/* Month header */
-.month {
-  padding: 40px 25px;
-  width: 100%;
-  background: #33C3FF;
-  text-align: center;
-}
+    /* Month header */
+    .month {
+      padding: 40px 25px;
+      width: 100%;
+      background: #33C3FF;
+      text-align: center;
+    }
 
-/* Month list */
-.month ul {
-  margin: 50;
-  padding: 0;
-}
+    /* Month list */
+    .month ul {
+      margin: 50;
+      padding: 0;
+    }
 
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
+    .month ul li {
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
 
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
+    /* Previous button inside month header */
+    .month .prev {
+      float: left;
+      padding-top: 10px;
+    }
 
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
+    /* Next button */
+    .month .next {
+      float: right;
+      padding-top: 10px;
+    }
 
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color:#ddd;
-}
+    /* Weekdays (Mon-Sun) */
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color:#ddd;
+    }
 
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666;
+      text-align: center;
+    }
 
-/* Days (1-31) */
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
+    /* Days (1-31) */
+    .days {
+      padding: 10px 0;
+      background: #eee;
+      margin: 0;
+    }
 
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
+    .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size:12px;
+      color: #777;
+    }
 
-/* Highlight the "current" day */
-.days li .active {
-  padding: 5px;
-  background: #33C3FF;
-  color: white !important
-}
-    
-.love {
-  width: 50px;
-  height: 50px;
-  transform: rotate(45deg);
-  background: red;
-  position: relative;
-  top: 10rem;
-  left: 10rem;
-}
+    /* Highlight the "current" day */
+    .days li .active {
+      padding: 5px;
+      background: #33C3FF;
+      color: white !important
+    }
 
-.love:before,
-.love:after {
-  content: "";
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: red;
-  position: absolute;
-}
+    .love:before,
+    .love:after {
+      content: "";
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background: red;
+      position: absolute;
+    }
 
-.love:before {
-  top: 0;
-  left: -25px;
-}
+    .love:before {
+      top: 0;
+      left: -25px;
+    }
 
-.love:after {
-  top: -25px;
-}
-.love {
-  width: 50px;
-  height: 50px;
-  transform: rotate(45deg);
-  background: red;
-  position: relative;
-  top: 10rem;
-  left: 10rem;
-  animation: beating 2s ease infinite;
-}
-
+    .love:after {
+      top: -25px;
+    }
+    .love {
+      width: 50px;
+      height: 50px;
+      transform: rotate(45deg);
+      background: red;
+      position: relative;
+      top: 10rem;
+      /*se mueve el corazon al centro*/
+      left: 48%;
+      animation: beating 2s ease infinite;
+    }
+    /*Se ajusta posicion de tabla y ancho*/
+    .tabla-chuchu{
+      width: 800px;
+      margin-top: 3%;
+    }
+    /*se cambia propiedad de aliniacion de texto a centro*/
+    .table{
+      text-align: center;
+    }
 @keyframes beating {
   0% {
   	transform: rotate(45deg) scale(1);
