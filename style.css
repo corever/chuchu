@@ -45,7 +45,7 @@
         background:url('./fondo.jpg');
         /*yo lo escribi... le digo al fondo que cubra todo el tamaño*/
         /*aqui obligamos a la imagen a CUBRIR todo el espacio adaptando su tamaño*/
-        background-size: cover;
+        background-size: center;
         /*le digo que siempre el fondo tiene que cubrir TODO */
         min-height: 100%;
    }
@@ -55,7 +55,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 70%;
         height: 100%;
     }
 
@@ -66,16 +66,92 @@
         background-color: #33C3FF;            
     }
     .cele{
-        background-color: #2EB2C1;
+        background-color: #33C3FF;
     }
     .claro{
-        background-color:#3BC3AD;
+        background-color:#33C3FF;
     }
     .verde{
-        background-color:#6AC4A8;
+        background-color:#33C3FF;
     }
     .container{
         padding-left: 0px;
         padding-right: 0px;
 
     }
+    ul {list-style-type: none;}
+body {font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 40px 25px;
+  width: 100%;
+  background: #33C3FF;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 50;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #33C3FF;
+  color: white !important
+}
+    
+
+  
